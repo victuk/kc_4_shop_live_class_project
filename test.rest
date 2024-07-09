@@ -1,0 +1,47 @@
+POST http://localhost:3000/auth/register
+Content-Type: application/json
+
+{
+    "fullName": "Victor Ukok",
+    "email": "ukokjnr@gmail.com",
+    "password": "victorukok"
+}
+
+
+###
+POST http://localhost:3000/auth/login
+Content-Type: application/json
+
+{
+    "email": "ukokjnr@gmail.com",
+    "password": "victorukok"
+}
+
+
+###
+# ukokjnr's token yJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NjdhZGI0M2RmZWQ4N2NhZTNmMmNiZGYiLCJlbWFpbCI6InVrb2tqbnJAZ21haWwuY29tIiwiaWF0IjoxNzE5MzI4MDI0fQ.Q2Cht5odR4o9i8EYXnGskiv_R_URSTZcmP_8UnABLzU
+# mfreke.victor's token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NjdhZDllNmJmNDIxZWNhMzdiNDE2YjUiLCJlbWFpbCI6Im1mcmVrZS52aWN0b3JAZ21haWwuY29tIiwiaWF0IjoxNzE5MzI4MDkwfQ.EKX6ejr_4PhqTMCh2OoJ7IaEMP9C7cMpTFIdeTDvkeE
+
+POST http://localhost:3000/product/product
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NjdhZDllNmJmNDIxZWNhMzdiNDE2YjUiLCJlbWFpbCI6Im1mcmVrZS52aWN0b3JAZ21haWwuY29tIiwiaWF0IjoxNzE5MzI5ODEyfQ.3PfsnC7yhD99w0nQagchs2fF6xMBikewCxcssNbPIFM
+
+{
+    "name": "Private jet",
+    "description": "Buy your private jet here. Buy two, get 1 free",
+    "price": 30000
+}
+
+###
+
+GET http://localhost:3000/product/products
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NjdhZGI0M2RmZWQ4N2NhZTNmMmNiZGYiLCJlbWFpbCI6InVrb2tqbnJAZ21haWwuY29tIiwiaWF0IjoxNzE5MzI5OTMwfQ.P6oL4h5j0xNjYmjxd7C4CEtt-F19EEJURji6Gitbvw4
+
+###
+
+DELETE http://localhost:3000/product/667ae4771291e6a55f0d7f57
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NjdhZGI0M2RmZWQ4N2NhZTNmMmNiZGYiLCJlbWFpbCI6InVrb2tqbnJAZ21haWwuY29tIiwiaWF0IjoxNzE5MzI5OTMwfQ.P6oL4h5j0xNjYmjxd7C4CEtt-F19EEJURji6Gitbvw4
+
+

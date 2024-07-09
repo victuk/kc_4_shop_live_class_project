@@ -1,0 +1,46 @@
+POST http://localhost:3000/task
+Content-Type: application/json
+
+{
+    "task_name": "Grade",
+    "task_des": "Grade all students",
+    "status": "pending"
+}
+
+###
+
+GET http://localhost:3000/tasks
+Content-Type: application/json
+
+
+###
+
+GET http://localhost:3000/task/f32fc09f-0d03-4b1e-89a9-336ed97ffc93
+Content-Type: application/json
+
+###
+# ukokjnr's token yJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NjdhZGI0M2RmZWQ4N2NhZTNmMmNiZGYiLCJlbWFpbCI6InVrb2tqbnJAZ21haWwuY29tIiwiaWF0IjoxNzE5MzI4MDI0fQ.Q2Cht5odR4o9i8EYXnGskiv_R_URSTZcmP_8UnABLzU
+# mfreke.victor's token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NjdhZDllNmJmNDIxZWNhMzdiNDE2YjUiLCJlbWFpbCI6Im1mcmVrZS52aWN0b3JAZ21haWwuY29tIiwiaWF0IjoxNzE5MzI4MDkwfQ.EKX6ejr_4PhqTMCh2OoJ7IaEMP9C7cMpTFIdeTDvkeE
+
+PUT http://localhost:3000/task/f32fc09f-0d03-4b1e-89a9-336ed97ffc93
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NjdhZDllNmJmNDIxZWNhMzdiNDE2YjUiLCJlbWFpbCI6Im1mcmVrZS52aWN0b3JAZ21haWwuY29tIiwiaWF0IjoxNzE5MzI5ODEyfQ.3PfsnC7yhD99w0nQagchs2fF6xMBikewCxcssNbPIFM
+
+{
+    "task_name": "Private jet",
+    "task_des": "Buy your private jet here. Buy two, get 1 free"
+}
+
+###
+
+PATCH http://localhost:3000/task/f32fc09f-0d03-4b1e-89a9-336ed97ffc93
+Content-Type: application/json
+
+{
+    "status": "completed"
+}
+###
+
+
+DELETE http://localhost:3000/task/f32fc09f-0d03-4b1e-89a9-336ed97ffc93
+Content-Type: application/json
